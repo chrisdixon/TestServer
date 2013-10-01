@@ -1,0 +1,18 @@
+<Configuration>
+	<System systemname="Lancaster" ControlIPAddr="192.168.2.90" InvalidTones="Send" Attach="1" Buzzer="1" ToneBuzzer="2">
+	</System>
+	<Splicers>
+		<Splicer splicername="Splicer A" VideoIPAddr="192.168.3.91">
+			<Channel channelname="CH01" zonename="Z01" trigger="dtmf" cutoff="60" entrydelim="*" exitdelim="#" exitflag="ignore" genlock="genlock_on" agcdec="agc_dec_on" preroll="240" postblack="0" toneone="123" tonetwo="000" tonethree="000" tonefour="000" swbacktime="0" pal="0" frm_sec="30" bypass="bypass_off" latestart="0" earlystop="0">
+			</Channel>
+			<Channel channelname="CH02" zonename="Z01" trigger="contact" cutoff="60" entrydelim="*" exitdelim="#" exitflag="ignore" genlock="genlock_on" agcdec="agc_dec_on" preroll="240" postblack="0" toneone="123" tonetwo="000" tonethree="000" tonefour="000" swbacktime="0" pal="0" frm_sec="30" bypass="bypass_off" latestart="0" earlystop="0">
+			</Channel>
+		</Splicer>
+		<Splicer splicername="Splicer B" VideoIPAddr="192.168.3.92">
+			<Channel channelname="CH03" zonename="Z01" trigger="dtmf" cutoff="60" entrydelim="*" exitdelim="#" exitflag="ignore" genlock="genlock_on" agcdec="agc_dec_on" preroll="240" postblack="0" toneone="123" tonetwo="000" tonethree="000" tonefour="000" swbacktime="0" pal="0" frm_sec="30" bypass="bypass_off" latestart="0" earlystop="0">
+			</Channel>
+			<Channel channelname="CH04" zonename="Z01" trigger="contact" cutoff="60" entrydelim="*" exitdelim="#" exitflag="ignore" genlock="genlock_on" agcdec="agc_dec_on" preroll="240" postblack="0" toneone="123" tonetwo="000" tonethree="000" tonefour="000" swbacktime="0" pal="0" frm_sec="30" bypass="bypass_off" latestart="0" earlystop="0">
+			</Channel>
+		</Splicer>
+	</Splicers>
+</Configuration>
